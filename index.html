@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            background-color: rgb(63, 61, 61);
+            color: white;
+            height: 50px;
+            position: sticky;
+        }
+        header ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        ul li{
+            display: inline-block;
+            margin: 13px;
+        }
+        ul li{
+            width: 75px;
+            height: 25px;
+            background-color: #fb7979;
+            color: white;
+            text-align: center;
+        }
+        .img{
+            width: 241px;
+            height: 321px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-image: url('https://plus.unsplash.com/premium_photo-1702742526094-74a4ad389d73?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 367px;
+            right: 99px;
+            animation-name: animation1;
+          animation-timing-function: ease-in-out;
+           animation-iteration-count: infinite;
+           animation-duration: 1s; 
+           animation-direction:alternate-reverse;
+        }
+        .bax1{
+            width: 251px;
+            height: 200px;
+            background-color: #833232;
+            color: white;
+           border: 2px solid black;
+           border-radius: 14px;
+           padding: 20px 30px;
+           text-align:center;
+           position:absolute;
+           top: 105vh;
+           right: 70vw;
+           line-height: 42px;
+        }
+        .bax2{
+            width: 251px;
+            height: 200px;
+            background-color:#833232;
+            color: white;
+           border: 2px solid black;
+           border-radius: 14px;
+          /* text-align: center; */
+          padding: 20px 30px;
+          text-align: center;
+          position:absolute;
+          top: 105vh;
+          right: 6vw;
+          line-height: 52px;
+        }
+        .container{
+            width: 99vw;
+            height: 100vh;
+            background-color: pink;
+            display: flex;
+            justify-content: space-evenly;
+             
+        }
+        @keyframes animation1 {
+            from{
+                width: 241px;
+                height: 321px;
+            }
+            to{
+                width: 300px;
+                height: 380px;
+            }
+        }
+        .sk{
+            text-align: center;
+        }
+        .bi{
+            text-align: center;
+        }
+        .container1{
+            width: 100vw;
+            height: 140vh;
+            background-color: pink;
+          display: flex;
+        }
+        .tex{
+            text-align: center;
+        }
+
+.box1 {
+    width: 266px;
+    height: 214px;
+    border-radius: 64px;
+    margin: 20px 45px;
+    display: inline-block;
+    background-image: url("1.jpeg");
+    background-size: cover;
+    position:relative;
+    top: 41px;
+    right: -62px;
+
+}
+.box2 {
+    width: 266px;
+    height: 214px;
+    border-radius: 64px;
+    margin: 20px 39px;
+    display: inline-block;
+    background-image: url("2.jpeg");
+    background-size: cover;
+    position: relative;
+    top: 41px;
+    right: -645px;
+
+
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+      
+        <div class="container1">
+            <div class="box1">
+
+            </div>
+            <div class="box2">
+
+            </div>
+            <div class="bax2">
+                <div class="bi">
+                    BIO DATA
+                </div>
+                <p>NAME:-SATYAM KUMAR</p>
+                <P>COURSE:-CSE</P>
+                <P>COLLEGE:-IIIT RANCHI</P>
+
+            </div>
+            <div class="img"></div>
+            <div class="bax1">
+                <div class="sk"> <b><big>MY SKILL</big></b></div>
+                <P>FULL STACK DEVELOPER</P>
+               <p>DATA ANALYTICS</p>
+               <P>DRIVING SKILL</P>
+               <P>JAVA</P>
+               <p></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
